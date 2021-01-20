@@ -32,7 +32,7 @@ if (userLength > 7 && userLength < 129) {
 
     if(!userLower && !userUpper && !userNumbers && !userSpecial) {
      return `User of the dark arts I see`
-      }
+    }
 
   }  else {
     return "virus activated"
