@@ -21,7 +21,7 @@ var charsSpecial = "!@#$%^&*()_+[]~"
 
 function generatePassword () {
   
-  var userLength = prompt("Length from 8-128")
+  var userLength = prompt("Enter a digit from 8 to 128")
  
 if (userLength > 7 && userLength < 129) {
   
@@ -43,12 +43,12 @@ if (userLength > 7 && userLength < 129) {
     +( this.userNums  ? charsNumbers : '' )
     +( this.userSpecial ? charsSpecial : '' )
 
-    var password1 = ""
+    var password = ""
 
     for (var i=0; i<userLength; i++) {
       var charPick = Math.floor(Math.random()*charSet.length)
-      password1 += charSet[charPick]}
+      password += charSet[charPick]}
     
-      return password1
+      return password
 
 }
